@@ -75,3 +75,11 @@ npm run start:chromium
 ## Licence
 
 [MIT License](LICENSE)
+
+# Coletor de frames (fork)
+
+No modo de controles personalizados, clique em ▦ no player para abrir o coletor. Pause o vídeo, escolha o FPS aproximado para navegar e colete imagens. A navegação usa passos de 1/FPS segundo; o navegador não informa a taxa original e pode mostrar o mesmo quadro em passos sucessivos. A coleta em sequência começa na posição atual, em intervalos da linha do tempo, e termina após a duração escolhida ou no fim do vídeo. O vídeo permanece pausado. O PNG reúne os frames, na ordem de coleta, horizontalmente.
+
+Com o painel aberto: `,` e `.` voltam e avançam; `C` coleta; `Z` desfaz; `A` inicia a sequência; `S` interrompe; `D` baixa; `X` limpa; `Esc` fecha. Os atalhos não interferem na digitação em campos. Fechar o painel descarta os frames coletados.
+
+Há um limite de 100 frames, largura de 32767 pixels e área de 100 milhões de pixels para evitar falhas do canvas. Vídeos protegidos por restrições de origem podem não permitir a captura; o painel informa o erro. A tentativa alternativa usa a mesma URL de vídeo disponibilizada pelo botão de download original, quando presente.

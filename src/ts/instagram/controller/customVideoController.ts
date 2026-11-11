@@ -10,6 +10,7 @@ import { VolumeBar } from './elements/volumeBar';
 import { SeekBar } from './elements/seekBar';
 import { Settings } from '../../shared/settings';
 import { DownloadButton } from './elements/downloadButton';
+import { FrameCollectorButton } from './elements/frameCollector';
 
 // The custom video controller.
 export class CustomVideoController extends VideoController {
@@ -73,6 +74,7 @@ export class CustomVideoController extends VideoController {
         const controls = [];
 
         controls.push(new PlayButton(this));
+        controls.push(new FrameCollectorButton(this));
 
         // Create a mute and volume bar and make the volume bar collapse when not hovered.
         const mudeButton = new MuteButton(this);

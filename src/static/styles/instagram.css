@@ -167,3 +167,71 @@
 .ivc-control-dropdown li:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
+.ivc-frame-panel {
+    position: fixed;
+    z-index: 2147483647;
+    right: 16px;
+    top: 70px;
+    width: min(340px, calc(100vw - 32px));
+    box-sizing: border-box;
+    max-height: calc(100vh - 86px);
+    overflow: auto;
+    padding: 16px;
+    border: 1px solid #484848;
+    border-radius: 12px;
+    color: #f5f5f5;
+    background: #1d1d1f;
+    box-shadow: 0 8px 32px #0009;
+    font:
+        14px/1.4 system-ui,
+        sans-serif;
+    pointer-events: auto;
+}
+.ivc-frame-panel p {
+    margin: 10px 0;
+    color: #c8c8c8;
+}
+.ivc-frame-heading,
+.ivc-frame-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+.ivc-frame-heading {
+    justify-content: space-between;
+}
+.ivc-frame-panel label {
+    display: block;
+    flex: 1;
+}
+.ivc-frame-panel input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+    color: white;
+    background: #303033;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+.ivc-frame-panel button {
+    flex: 1;
+    padding: 7px 9px;
+    cursor: pointer;
+    color: white;
+    background: #424247;
+    border: 1px solid #666;
+    border-radius: 6px;
+}
+.ivc-frame-heading button {
+    flex: 0 0 auto;
+    font-size: 18px;
+    padding: 1px 9px;
+}
+.ivc-frame-panel button:hover,
+.ivc-frame-panel button:focus-visible {
+    background: #626268;
+    outline: 2px solid white;
+}
